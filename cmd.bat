@@ -1,7 +1,7 @@
 @echo off
+title Command Prompt
 set av="AVG Antivirus"
 
-title Command Prompt
 echo Microsoft Windows [Version 10.0.15063]
 echo (c) 2017 Microsoft Corporation. All rights reserved.
 echo.
