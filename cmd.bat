@@ -32,11 +32,11 @@ echo Be careful an scammers ip address was seen contected to this machine - %av%
 goto :UserInput
 
 :c4
-echo Syskey has been disable by using system administrator
+echo Syskey has been disable by your system administrator
 goto :UserInput
 
 :fine
 color a
-echo Your pc is fine all files are clean - %av%
+echo Your pc is fine and all your files are clean - %av%
 goto :UserInput
 
