@@ -32,7 +32,7 @@ echo Be careful an scammers ip address was seen contected to this machine - %av%
 goto :UserInput
 
 :c4
-echo Syskey has been disable by your system administrator
+echo Syskey has been disabled by your system administrator
 goto :UserInput
 
 :fine
