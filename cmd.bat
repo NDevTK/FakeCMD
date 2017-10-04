@@ -8,35 +8,24 @@ echo.
 
 :UserInput
 set /p c="%cd%>"
-if %c%==dir goto :c1
-if %c%==tree goto :c2
-if %c%==netstat goto :c3
+if %c%==dir goto :fine
+if %c%==tree goto :fine
+if %c%==netstat goto :warn
 if %c%==syskey goto :c4
 if %c%==eventvwr goto :c3
 %c%
 goto :UserInput
-
-:c1
-dir
-goto :fine
-
-:c2
-tree
-goto :fine
-
-:c3
-netstat
+:warn
+%c%
 color 4
 cls
 echo Be careful an scammers ip address was seen contected to this machine - %av%
 goto :UserInput
-
 :c4
 echo Syskey has been disabled by your system administrator
 goto :UserInput
-
 :fine
+%c%
 color a
 echo Your pc is fine and all your files are clean - %av%
 goto :UserInput
-
