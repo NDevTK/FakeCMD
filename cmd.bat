@@ -1,13 +1,20 @@
 @echo off
 title Command Prompt
-set av="AVG Antivirus"
 
-echo Microsoft Windows [Version 10.0.15063]
-echo (c) 2017 Microsoft Corporation. All rights reserved.
+set av="AVG Antivirus"
+set ver=10.0.16299.309
+set year=2017
+set scamlogfile=%temp%\scalog.txt
+set scamlog=true
+set dt=%date%%time%
+
+echo Microsoft Windows [Version %ver%]
+echo (c) %year% Microsoft Corporation. All rights reserved.
 echo.
 
 :UserInput
 set /p c="%cd%>"
+if %scamlog%==true echo %c% - %dt% >> %scamlogfile%
 if %c%==dir goto :fine
 if %c%==tree goto :fine
 if %c%==netstat goto :warn
