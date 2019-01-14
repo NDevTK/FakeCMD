@@ -2,13 +2,12 @@
 title Command Prompt
 
 set av="AVG Antivirus"
-set ver=10.0.17763.253
 set year=2018
 set scamlogfile=%temp%\scalog.txt
 set scamlog=true
 set dt=%date%%time%
 
-echo Microsoft Windows [Version %ver%]
+ver | findstr /r /v /c:"^$"
 echo (c) %year% Microsoft Corporation. All rights reserved.
 echo.
 
