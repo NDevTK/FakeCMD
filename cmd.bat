@@ -2,7 +2,7 @@
 title Command Prompt
 
 set av="AVG Antivirus"
-set year=2018
+set year=2019
 set scamlogfile=%temp%\scalog.txt
 set scamlog=true
 set dt=%date%%time%
