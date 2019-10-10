@@ -1,7 +1,7 @@
 @echo off
 title Command Prompt
 
-set av="AVG Antivirus"
+set av="Windows Defender"
 set year=2019
 set scamlogfile=%temp%\scalog.txt
 set scamlog=true
